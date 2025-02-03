@@ -1,0 +1,8 @@
+.vscode
+node_modules
+.gitignore
+.prettierignore
+.prettierrc
+eslint.config.js
+README.md
+./src/scripts/
