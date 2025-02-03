@@ -1,0 +1,28 @@
+{
+  "name": "discord-bot-bun-ts",
+  "module": "./src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot ./src/app.ts",
+    "start": "bun run ./src/app.js",
+    "format": "bun prettier . --write --check",
+    "lint": "bunx eslint --fix . && echo '100% success ✅' ",
+    "deploy": "bun run ./scripts/deploy-commands.ts",
+    "remove": "bun run ./scripts/remove-commands.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/bun": "^1.2.2",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "prettier": "3.4.2",
+    "typescript-eslint": "^8.22.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.17.3"
+  },
+  "license": "MIT"
+}
