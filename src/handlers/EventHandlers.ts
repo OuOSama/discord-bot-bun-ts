@@ -1,11 +1,11 @@
 import path from 'path'
-import { loadTsFilesPath } from 'src/lib/loadTsFilesPath'
+import { loadTsFilesPath } from '@lib/loadTsFilesPath'
 import { Client } from 'discord.js'
 
 export default async (client: Client) => {
   // Get all .ts event files, including those in subfolders
   const TsEventFiles = await loadTsFilesPath(
-    './{src,build}/Events/**/*.{ts,js}',
+    './src/Events/**/*.ts',
   )
 
   // Dynamically import event files and register events with the client

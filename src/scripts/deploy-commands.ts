@@ -1,6 +1,6 @@
 import path from 'path'
 import { REST, Routes } from 'discord.js'
-import { loadTsFilesPath } from 'src/lib/loadTsFilesPath'
+import { loadTsFilesPath } from '@lib/loadTsFilesPath'
 
 async function deploy_commands() {
   // 🚀 Use glob to search for command files.

@@ -8,7 +8,7 @@ import {
   ChatInputCommandInteraction,
 } from 'discord.js'
 import path from 'path'
-import { loadTsFilesPath } from 'src/lib/loadTsFilesPath'
+import { loadTsFilesPath } from '@lib/loadTsFilesPath'
 
 export default async (client: Client) => {
   // 🛠️ Ensure that the `commands` collection exists on the client instance
@@ -18,7 +18,7 @@ export default async (client: Client) => {
   const cooldowns = new Collection<string, Collection<string, number>>()
 
   // 📂 Get all TypeScript command files recursively from the `src/Commands` folder
-  const TsCommandsFiles = await loadTsFilesPath('./{src,build}/Commands/**/*.{ts,js}')
+  const TsCommandsFiles = await loadTsFilesPath('./src/Commands/**/*.ts')
   console.log(TsCommandsFiles)
 
   // 🔄 Load and register all found command files
