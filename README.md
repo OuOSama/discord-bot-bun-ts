@@ -36,8 +36,8 @@ bun install
 ## ⚙️ Configuration ( .env )
 ``` bash
 APPLICATION_ID   =   <REPLACE_WITH_YOUR_APPLICATION_ID>
-TOKEN       =   <REPLACE_WITH_YOUR_TOKEN>
-GUILD_ID    =   <REPLACE_WITH_YOUR_GUILD_ID>
+TOKEN            =   <REPLACE_WITH_YOUR_TOKEN>
+GUILD_ID         =   <REPLACE_WITH_YOUR_GUILD_ID>
 ```
 
 ## 🧪 Development
