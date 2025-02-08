@@ -74,7 +74,6 @@ bun start
  ┣ 📜.dockerignore
  ┣ 📜.env
  ┣ 📜.gitignore
- ┣ 📜.prettierignore
  ┣ 📜.prettierrc
  ┣ 📜bun.lock
  ┣ 📜Dockerfile
