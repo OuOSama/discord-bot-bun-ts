@@ -33,7 +33,7 @@ cd my-bot
 bun install
 ```
 
-## ⚙️ Configuration ( .env )
+## ⚙️ Configuration ( rename from .env.example to .env )
 ``` bash
 APPLICATION_ID   =   <REPLACE_WITH_YOUR_APPLICATION_ID>
 TOKEN            =   <REPLACE_WITH_YOUR_TOKEN>
