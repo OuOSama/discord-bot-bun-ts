@@ -41,10 +41,7 @@ export default async (client: Client) => {
 
       // Update application commands via Discord API
       await rest.put(
-        Routes.applicationGuildCommands(
-          process.env.CLIENT_ID as string,
-          process.env.GUILD_ID as string,
-        ),
+        Routes.applicationGuildCommands(Bun.env.APPLICATION_ID, Bun.env.GUILD_ID),
         {
           body: commandsArray,
         },

@@ -13,4 +13,4 @@ EventHandlers(client)
 CommandsHandlers(client)
 
 // Login
-client.login(process.env.TOKEN)
+client.login(Bun.env.TOKEN)
